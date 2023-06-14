@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gmail</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: sans-serif;
+        }
+        body{
+            padding: 0 20px;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        nav{
+            box-sizing: border-box;
+            border-bottom: 1px solid gray;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+        }
+        .nav-sub button{
+           margin-right: 20px;
+        }
+
+        section{
+            display: flex;
+            justify-content: space-around;
+        }
+        .sec-div1{
+            width: 250px;
+            height: 250px;
+        }
+        .sec-div1 h2, .sec-div1 p{
+            margin-bottom: 20px;
+        }
+        .sec-div1 h2{
+            font-size: 35px;
+        }
+        .sec-div1 p{
+            font-size: 10px;
+        }
+        .sec-div1 p ~ button{
+            margin-right: 20px;
+        }
+
+        .same{
+            outline: none;
+            border: none;
+            color: white;
+            background: #5252dc;
+            padding: 7px;
+            border-radius: 5px;
+        }
+
+        .but{
+            color: #5252dc;
+            background:#fff;
+        }
+        .but:nth-child(1){
+            padding: 7px;
+            outline: none;
+            border: none;
+        }
+        .but:nth-child(2){
+            padding: 7px;
+            outline: none;
+            border: none;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+       <img src="" alt="img" />
+       <div class="nav-sub">
+         <button class="but">For Work</button>
+         <button class="but">Sign In</button>
+         <button class="same">Create an Account</button>
+       </div>
+    </nav>
+
+    <section>
+       <div class="sec-div1">
+          <h2>Secure, smart and easy to use email</h2>
+          <p>Get more done with Gmail. Now integrated with Google 
+            chat, Google meet and more, all in one space</p>
+          <button class="same">Create an Account</button>
+          <button>For Work</button>
+       </div>
+       <div class="sec-div2">
+           <img src="" alt="img" />
+       </div>
+    </section>
+</body>
+</html>
