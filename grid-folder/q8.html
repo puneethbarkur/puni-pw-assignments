@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-q8</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .main-container{
+            max-width: 700px;
+            min-height: 500px;
+            margin: 50px auto;
+            padding: 10px 20px;
+            background-color: #111;
+            border-radius: 12px;
+        }
+        .main-container h2{
+            color: #aaa;
+            font-weight: 500;
+            font-size: 20px;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-gap: 10px 30px;
+            padding: 5px;
+            margin-top: 20px;
+            min-height: 420px;
+        }
+
+        .items{
+            border-radius: 11px;
+            color: #000;
+            font-size: 10px;
+            font-weight: bold;
+            text-align:center;
+            padding-top: 67%;
+        }
+        .items:nth-child(1){
+            background-color: #8d3daf;
+        }
+        .items:nth-child(2){
+            background-color: #e07c24;
+        }
+        .items:nth-child(3){
+            background-color: #758283;
+        }
+        .items:nth-child(4){
+            background-color: #e03b8b;
+        }
+        .items:nth-child(5){
+            background-color: #ff6666;
+        }
+        .items:nth-child(6){
+            background-color: #03c6c7;
+        }
+        .items:nth-child(7){
+            background-color: #cad5e2;
+        }
+        .items:nth-child(8){
+            background-color: #35bdd0;
+        }
+    </style>
+</head>
+<body>
+    <section class="main-container">
+        <h2>Feeling Fancy</h2> 
+        <div class="container">
+            <div class="items">#8d3daf</div>
+            <div class="items">#e07c24</div>
+            <div class="items">#758283</div>
+            <div class="items">#e03b8b</div>
+            <div class="items">#ff6666</div>
+            <div class="items">#03c6c7</div>
+            <div class="items">#cad5e2</div>
+            <div class="items">#35bdd0</div>
+        </div>
+    </section>
+</body>
+</html>
