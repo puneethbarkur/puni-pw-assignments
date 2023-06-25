@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 350px;
+            height: 200px;
+            margin: 50px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            position: relative;
+        }
+        div a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            width: 210px;
+            background: linear-gradient(to right, rgb(130, 130, 225), rgb(16, 16, 154));
+            text-decoration: none;
+            border-radius: 8px;
+            color: #fff;
+            position: absolute;
+            animation: pu 1s infinite linear;
+        }
+
+        @keyframes pu{
+            0%{
+                top: 50px;
+            }
+            25%{
+               top: 55px;
+            }
+            50%{  
+               top: 60px;
+            }
+            50%{  
+               top: 80px;
+            }
+            100%{
+                top: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <a href="https://www.pwskills.com" target="_blank">Click me to visit PW skills</a>
+    </div>
+    
+</body>
+</html>

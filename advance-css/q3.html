@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+          padding: 0px;
+          margin: 0px;
+          font-family: sans-serif;
+        }
+        .container{
+            border: 1px solid black;
+            width: 350px;
+            height: 300px;
+            border-radius: 8px;
+            margin: 100px auto;
+            padding: 8px;
+            background: linear-gradient(to top right, skyblue, blue);
+            transition: all 0.2s linear;
+        }
+        header{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 40px 20px;
+        }
+        header p:nth-child(1){
+            font-weight: bold;
+        }
+        header p:nth-child(2){
+            color: #fff;
+        }
+        h3{
+            padding-left: 35px;
+            margin-bottom: 15px;
+        }
+
+        ul{
+            padding-left: 75px;
+        }
+        button{
+            width: 78%;
+            height: 35px;
+            display: block;
+            border: none;
+            outline: none;
+            background: linear-gradient(to right, skyblue, rgb(5, 164, 5));
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+
+        .container:hover{
+            transform: rotate(-45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <p>#01</p>
+            <p>Created on: 1/1/2023</p>
+        </header>
+
+        <h3>Important Dates</h3>
+
+        <ul>
+            <li>January 26 - Republic Day</li>
+            <li>August 15 - Independance Day</li>
+            <li>October 2 - Gandhi Jayanthi</li>
+            <li>August 29 - National Sports Day</li>
+        </ul>
+
+        <button>Mark as Done</button>
+    </div>
+</body>
+</html>
