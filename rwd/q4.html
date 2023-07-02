@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+          display: flex;
+          flex-direction: column;
+          padding: 50px;
+          background-color: #000;
+          max-width: 800px;
+          margin: 50px auto;
+        }
+        h2{
+            color: #fff;
+        }
+        .column{
+            height: 25px;
+            padding: 0 10px;
+            font-size: 11px;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+            border: 1px solid #fff;
+            color: #fff;
+        }
+        .items{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        } 
+
+        @media only screen and (max-width: 767px){
+            .column .items:nth-child(3){
+                display: none;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <section class="box">
+        <!-- <h2>student dashboard</h2> -->
+        <div class="column">
+            <div class="items">Name</div>
+            <div class="items pos">Email</div>
+            <div class="items pos">Phone</div>
+        </div>
+        <div class="column">
+            <div class="items">Rahul</div>
+            <div class="items">rahul@example.com</div>
+            <div class="items">9087654334</div>
+        </div>
+        <div class="column">
+            <div class="items">Priya</div>
+            <div class="items">priya@example.com</div>
+            <div class="items">9087654334</div>
+        </div>
+        <div class="column">
+            <div class="items">Amit</div>
+            <div class="items">amit@example.com</div>
+            <div class="items">9087654334</div>
+        </div>
+        <div class="column">
+            <div class="items">Sneha</div>
+            <div class="items">sneha@example.com</div>
+            <div class="items">9087654334</div>
+        </div>
+        <div class="column">
+            <div class="items">Mohit</div>
+            <div class="items">mohit@example.com</div>
+            <div class="items">9087654334</div>
+        </div>
+        <div class="column">
+            <div class="items">Neha</div>
+            <div class="items">neha@example.com</div>
+            <div class="items">9087654334</div>
+        </div>
+        <div class="column">
+            <div class="items">Rajesh</div>
+            <div class="items">rajesh@example.com</div>
+            <div class="items">9087654334</div>
+        </div>
+        <div class="column">
+            <div class="items">Anita</div>
+            <div class="items">anita@example.com</div>
+            <div class="items">9087654334</div>
+        </div>
+        <div class="column">
+            <div class="items">Varun</div>
+            <div class="items">varun@example.com</div>
+            <div class="items">9087654334</div>
+        </div>
+        <div class="column">
+            <div class="items">Pooja</div>
+            <div class="items">pooja@example.com</div>
+            <div class="items">9087654334</div>
+        </div>
+    </section>
+</body>
+</html>

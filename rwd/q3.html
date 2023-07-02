@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .flex{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .box{
+        max-width: 920px;
+        min-height: 400px;
+        margin: auto;
+        border: 1px solid #000;
+        padding: 5px 2px;
+        box-sizing: border-box;
+    }
+    header{
+        background: #242b2e;
+        padding: 5px 15px;
+        box-sizing: border-box;
+    }
+    nav a{
+        font-family: sans-serif;
+        color: #fff;
+        margin-right: 10px;
+        text-decoration: none;
+        font-size: 11px;
+    }
+    button{
+        width: 90px;
+        color: white;
+        height: 28px;
+        background: #3e73fa;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+    }
+    .button2{
+        display: none;
+    }
+
+    .content{
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        padding: 30px;
+        font-family: sans-serif;
+        justify-content: space-around;
+    }
+
+    .ondu h1, .ondu h1 ~ p{
+        color: blue;
+    }
+    .ondu img {
+        width: 100%;
+    }
+    .ondu img ~ p{
+        color: black;
+        max-width: 350px;
+    }
+    .erdu img{
+        width: 100%;
+    }
+
+    .information{
+        min-height: 400px;
+        font-family: sans-serif;
+        flex-wrap: wrap;
+        flex-direction: column;
+        color: white; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+    }
+
+    .information h1{
+        color: blue;
+    }
+    .information p{
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    @media only screen and (max-width: 767px){
+        button, nav{
+            display: none;
+        }
+        .button2{
+            display: block;
+        }
+        .information{
+            background: #fff;
+            padding: 20px;
+
+            & p{
+                color: black;
+            }
+        }
+        
+    }
+    
+</style>
+<body>
+    <div class="box">
+        <header class="flex">
+            <img src="./images/q1.png" alt="">
+            <nav>
+                <a href="">Home</a>
+                <a href="">Blog</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+            </nav>
+            <button>Login</button>
+            <img src="./images/q12.png" class="button2"/>
+        </header>
+
+        <main class="content">
+            <div class="ondu">
+               <h4>Say Hi to</h4>
+               <h1>One Card</h1>
+               <p class="para">Co-branded card issuers: </p>
+               <img src="./images/q21.png" alt="">
+               <p class="para">India's best metal credit card built with full-stach tech.
+                  Backed by the pronciples of simplicity, transparency, and giving back control to the user.
+               </p>
+            </div>
+            <div class="erdu">
+               <img src="./images/q22.png" alt="">
+            </div>
+        </main>
+
+        <section class="information">
+            <h1>No Hidden Fees ever</h1>
+            <p>No Joining Fees</p>
+            <p>No Annual Fees</p>
+            <p>No Reward Reward Redemption fees</p>
+        </section>
+    </div>
+</body>
+</html>
