@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .container{
+            border: 1px solid black;
+            max-width: 1020px;
+            min-height: 400px;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        .box{
+            position: absolute;
+            top: 80px;
+            background: black;
+            padding: 20px 35px;
+            min-height: 320px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .items{
+            height: 160px;
+
+            & h3{
+                color: #fff;
+                margin-bottom: 20px;
+            }
+            & p{
+                color: gray;
+                font-size: 11px;
+                line-height: 30px;
+            }
+            & p.long{
+                width: 200px;
+                line-height: 22px;
+            }
+        }
+
+        .items:nth-child(4) input, .items:nth-child(4) button{
+           width: 100%;
+           height: 35px;
+           padding: 10px;
+           border-radius: 5px;
+           outline: none;
+           border: none;
+        }
+        .items:nth-child(4) button{
+            background-color: #2584e2;
+            margin-top: 5px;
+            color: white;
+            font-size: 14px;
+        }
+
+        @media only screen and (max-width: 575px){
+            .box{
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="items">
+                <h3>One Card</h3>
+                <p class="long">India's best metal card. built with fullstack tech. Backed by the principals of 
+                    simplicity, transparancy, and giving back control to the user.
+                </p>
+            </div>
+
+            <div class="items">
+                <h3>Navigation</h3>
+                <p>Home</p>
+                <p>About Us</p>
+                <p>Careers</p>
+                <p>Offers</p>
+            </div>
+
+            <div class="items">
+                <h3>Support</h3>
+                <p>FAQ</p>
+                <p>Cookies Policy</p>
+                <p>Terms Of Service</p>
+                <p>Support</p>
+            </div>
+
+            <div class="items">
+                <h3>Newsletter</h3>
+                <input type="email" placeholder="your email id here"/>
+                <br />
+                <button class="butt">Subscribe</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
