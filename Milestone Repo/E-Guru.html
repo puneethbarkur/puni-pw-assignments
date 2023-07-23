@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .flex{
+        display: flex;
+        align-items: center;
+    }
+
+    header{
+       justify-content: space-between;
+       border: 1px solid gray;
+       padding: 30px 90px;
+    }
+
+    header .logo{
+        justify-content: space-around;
+        gap: 10px;
+    }
+
+    header button{
+        width: 90px;
+        height: 35px;
+        border: none;
+        outline: none;
+        border: 1px solid black;
+        background: #fff;
+        cursor: pointer;
+    }
+
+    header nav{
+        justify-content: space-between;
+        gap: 50px;
+    }
+    header nav a{
+          color: gray;
+          text-decoration: none;
+        }
+
+    header nav a:nth-child(1){
+       color: #ff6400;
+    }
+
+    main{
+        padding: 90px;
+        justify-content: space-between;
+    }
+    
+    main .content{
+      flex-direction: column;
+      align-items: start;
+      justify-content: space-between;
+      gap: 30px;
+    }
+    main .content h1{
+        font-size: 50px;
+    }
+
+    main div.hero{
+        position: relative;
+        border: 1px solid red;
+        height: 350px;
+        width: 350px;
+    }
+    main .hero img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    main .hero img:nth-child(1){
+       top: 10px;
+    }
+    main .hero img:nth-child(3){
+        bottom: 0px; 
+        left: 55px;
+        width: 60%;
+        height: 80%;
+    }
+</style>
+<body>
+    <header class="flex">
+        <div class="logo flex">
+            <img src="./E-Guru-imgs/logo.png" />
+            <h2>E GURU</h2>
+        </div>
+
+        <nav class="flex">
+            <a href="" class="menu">Home</a>
+            <a href="" class="menu">About Us</a>
+            <a href="" class="menu">Features</a>
+            <a href="" class="menu">How it works</a>
+        </nav>
+
+        <button>Sign Up</button>
+    </header>
+
+    <main class="flex">
+        <div class="content flex">
+            <h1>STUDY FROM <br />HOME WITH EXPERT</h1>
+            <P>A learning system based on formalised <br />teaching with the
+                 help of resources.
+            </P>
+            <div>
+                <button>Get Started</button>
+                <button>Learn More</button>
+            </div>
+        </div>
+        <div class="hero">
+          <img src="./E-Guru-imgs/main-image-bg.png" alt="" />
+          <img src="./E-Guru-imgs/main-image-pattern.png" alt="" />
+          <img src="./E-Guru-imgs/main-image.png" alt="" />
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+</html>
