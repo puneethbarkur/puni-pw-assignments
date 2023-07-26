@@ -19,7 +19,6 @@
 
     header{
        justify-content: space-between;
-       border: 1px solid gray;
        padding: 30px 90px;
     }
 
@@ -33,9 +32,9 @@
         height: 35px;
         border: none;
         outline: none;
-        border: 1px solid black;
         background: #fff;
         cursor: pointer;
+        border: 1px solid gray;
     }
 
     header nav{
@@ -65,10 +64,30 @@
     main .content h1{
         font-size: 50px;
     }
+    .content p{
+        border-left: 1px solid gray;
+        padding-left: 10px;
+        line-height:  24px;
+        font-size: 20px;
+    }
+    .content div button{
+        width: 110px;
+        height: 40px;
+        border: none;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+    .content div button:nth-child(1){
+        background: #ff9e00;
+        color: white;
+    }
+    .content div button:nth-child(2){
+        border: 1px solid gray;
+        background: white;
+    }
 
     main div.hero{
         position: relative;
-        border: 1px solid red;
         height: 350px;
         width: 350px;
     }
@@ -85,6 +104,41 @@
         left: 55px;
         width: 60%;
         height: 80%;
+    }
+    
+    footer{
+        padding: 30px 90px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #0b0b59;
+        height: 350px;
+        color: white;
+    }
+
+    .grid{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    .grids{
+        width: 181px;
+    }
+    .grids img, .grids h2{
+        margin-bottom: 20px;
+    }
+    .grid .grids:first-child img{
+       background: green;
+    }
+    .grid .grids:nth-child(2) img{
+       background: orange;
+    }
+    .grid .grids:last-child img{
+       background: blue;
+    }
+    .footer-content{
+       width: 222px;
     }
 </style>
 <body>
@@ -122,6 +176,28 @@
         </div>
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="footer-content">
+            <h1 style="margin-bottom: 25px;">WHY WE ARE THE BEST</h1>
+            <p>a learning system based on formalized teaching</p>
+        </div>
+        <div class="grid">
+            <div class="grids">
+                <img src="./E-Guru-imgs/vector3.png" />
+                <h2>Expert Teacher</h2>
+                <p>a learning system based on formalized teaching</p>
+            </div>
+            <div class="grids">
+                <img src="./E-Guru-imgs/vector2.png" />
+                <h2>Online Courses</h2>
+                <p>a learning system based on formalized teaching</p>
+            </div>
+            <div class="grids">
+                <img src="./E-Guru-imgs/vector1.png" />
+                <h2>24/7 Support</h2>
+                <p>a learning system based on formalized teaching</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
