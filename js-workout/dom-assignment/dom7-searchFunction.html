@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="text" class="inp" placeholder="search for items" />
+        <h2>Results:</h2>
+        <ul>
+            <li class="list">HTML</li>
+            <li class="list">CSS</li>
+            <li class="list">C++</li>
+            <li class="list">Tailwind CSS</li>
+            <li class="list">GitHub</li>
+            <li class="list">Java</li>
+            <li class="list">JavaScript</li>
+        </ul>
+    </div>
+    <script>
+        let lists = document.querySelectorAll(".list");
+        let inp = document.querySelector(".inp");
+
+        function pu(e){
+            let val = e.target.value;
+            for(let i=0; i<lists.length; i++){
+                if(lists[i].innerText.toLowerCase().indexOf(inp.value)!== -1){
+                    lists[i].style.display = "block";
+                }
+                else{
+                    lists[i].style.display = "none";
+                }
+            }
+            
+        }
+        inp.oninput = pu;
+    </script>
+</body>
+</html>

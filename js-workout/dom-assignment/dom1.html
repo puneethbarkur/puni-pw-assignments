@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Update Profile Picture</h1>
+    <input type="file" class="inp"/>
+    <h2>Your Profile Picture</h2>
+    <div class="pic_container">
+        <img src="./images/profile-pic.png" />
+    </div>
+</body>
+<script>
+    let inp = document.querySelector(".inp");
+    let pic_container = document.querySelector(".pic_container");
+    
+    function pu(e){
+        let val = e.target.files;
+        let value= val[0];
+        console.log(value.name);
+        let conct = "./images/" + value.name;
+        console.log(conct);
+
+        let image = document.createElement("img");
+        image.setAttribute("src", conct);
+        pic_container.innerHTML = image;
+    }
+    inp.addEventListener("change", pu);
+</script>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input{
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+</style>
+<body>
+    <h2>Sign Up Form</h2>
+    <form>
+        <label for="">Name: </label>
+        <input type="text" class="username" placeholder="(Minimum 3 characters)"/>
+        <br />
+        <label for="">Email: </label>
+        <input type="text" class="email" placeholder="(Enter your email)"/>
+        <br />
+        <label for="">Password: </label>
+        <input type="text" class="password" placeholder="(Minimum 8 characters)"/>
+        <br />
+        <button class="butt" type="submit">Submit</button>
+    </form>
+    <script>
+        let form = document.querySelector("form");
+        
+        function pu(e){
+        let username = document.querySelector(".username");
+        let email = document.querySelector(".email");
+        let password = document.querySelector(".password");
+          e.preventDefault();
+          if((username.value.length < 3)||(password.value.length < 8)){
+            alert("Form validation failed");
+          }
+          else{
+            alert("Form validation successful");
+          }
+        }
+        form.onsubmit = pu;
+    </script>
+</body>
+</html>

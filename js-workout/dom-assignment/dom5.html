@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+       border: 3px solid black;
+       padding: 10px;
+
+       & img{
+        display: block;
+        margin-top: 20px;
+       }
+
+       & h2{
+        margin-top: 0px;
+       }
+
+       & button{
+        cursor: pointer;
+       }
+    }
+</style>
+<body>
+    <div>
+        <h2>Your Image is visible</h2>
+        <button class="butt">Toggle Image</button>
+        <img src="./images/img-toggle.png" alt="toggle-img">
+    </div>
+    <script>
+        let h2 = document.querySelector("h2");
+        let butt = document.querySelector(".butt");
+        let img = document.querySelector("img");
+        
+        function pu(){
+            if(h2.innerText == "Your Image is visible"){
+                h2.innerText = "Your Image is hidden";
+                img.style.display = "none";
+            }
+            else if(h2.innerText == "Your Image is hidden"){
+                h2.innerText = "Your Image is visible";
+                img.style.display = "block";
+            }
+        }
+        butt.onclick = pu;
+    </script>
+</body>
+</html>
